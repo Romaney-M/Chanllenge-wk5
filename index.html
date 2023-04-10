@@ -5,10 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="A set/style.css">
-  <link rel="javascript" href="A set/script.js">
-  <link rel="google fonts" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Noto+Sans&display=swap" rel="stylesheet">
+<!-- Dayjs -->
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
 
   <title>5 day calender</title>
@@ -16,30 +17,32 @@
 <body>
   <h1 id="month"> 5 day calender</h1>
   <p class="info"> A 5 day calender to plan your day</p>
-
   <div class="container-fluid px-5">
-    <div class="hour" class="col-2 col-md-1 hour text-center py-3">6
-    <textarea class="col-8 col-md-10 description" rows="3"> </textarea></div>
+    <div id="hour-9" class="row time-block past">
+      <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
+      <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
 
-    <div class="hour">7
-      <textarea class="col-8 col-md-10 description" rows="3"> </textarea></div>
+    <div id="hour-10" class="row time-block present">
+      <div class="col-2 col-md-1 hour text-center py-3">10AM</div>
+      <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
 
-    <div class="hour">8
-     <textarea class="col-8 col-md-10 description" rows="3"> </textarea></div>
+    <div id="hour-11" class="row time-block future">
+      <div class="col-2 col-md-1 hour text-center py-3">11AM</div>
+      <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
 
-    <div class="hour">9
-      <textarea class="col-8 col-md-10 description" rows="3"> </textarea></div>
-
-    <div class="hour">10
-      <textarea class="col-8 col-md-10 description" rows="3"> </textarea></div>
-
-    <div class="hour">11
-    <textarea class="col-8 col-md-10 description" rows="3"> </textarea></div>
-
-    <div class="hour">12
-    <textarea class="col-8 col-md-10 description" rows="3"> </textarea></div>
-
-   
   </div>
+  <script src="A set/script.js"></script>
 </body>
 </html>

@@ -18,14 +18,56 @@ textarea{
   color: #000000;
   border: 1px solid black;
   padding: 10px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .info{
   color: #413F54;
 }
 
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block{
+  border-radius: 15px;
+}
+
+.row {
+  border-top: 1px solid white;
+}
+
 .hour{
   color:#5F5AA2;
-  background-color: rgb(190, 245, 245);
   padding: 5px;
+  font-family: 'DynaPuff', cursive;
+  border-top: 1px dashed #000000;
+}
+
+.past{
+  background-color: #67746e7a;
+  color: white;
+}
+
+.present{
+  background-color: #92d899;
+  color: white;
+}
+
+.future{
+  background-color: #59b02a;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
 }
